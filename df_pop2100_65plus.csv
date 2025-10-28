@@ -1,0 +1,811 @@
+"projection","year","population"
+"Historique",1960,22619
+"Historique",1961,22752
+"Historique",1965,26473
+"Historique",1967,26862
+"Historique",1970,28962
+"Historique",1971,29373
+"Historique",1972,29843
+"Historique",1973,30370
+"Historique",1974,30813
+"Historique",1975,31036
+"Historique",1976,31188
+"Historique",1977,31079
+"Historique",1978,31362
+"Historique",1979,31540
+"Historique",1980,31663
+"Historique",1981,31359
+"Historique",1982,30575
+"Historique",1983,29490
+"Historique",1984,28331
+"Historique",1985,27799
+"Historique",1986,27896
+"Historique",1987,27934
+"Historique",1988,27678
+"Historique",1989,27884
+"Historique",1990,50814
+"Historique",1991,51678
+"Historique",1992,52754
+"Historique",1993,53833
+"Historique",1994,55098
+"Historique",1995,56478
+"Historique",1996,57990
+"Historique",1997,59260
+"Historique",1998,60174
+"Historique",1999,61060
+"Historique",2000,61904
+"Historique",2001,60938
+"Historique",2002,61922
+"Historique",2003,62889
+"Historique",2004,63638
+"Historique",2005,64955
+"Historique",2006,66000
+"Historique",2007,66829
+"Historique",2008,67693
+"Historique",2009,68892
+"Historique",2010,70046
+"Historique",2011,71084
+"Historique",2012,73261
+"Historique",2013,75057
+"Historique",2014,77374
+"Historique",2015,79840
+"Historique",2016,81957
+"Historique",2017,84131
+"Historique",2018,86208
+"Historique",2019,88328
+"Historique",2020,90787
+"Historique",2021,92737
+"Historique",2022,95199
+"Historique",2023,98220
+"Historique",2024,101030
+"Historique",2025,NA
+"Historique",2026,NA
+"Historique",2027,NA
+"Historique",2028,NA
+"Historique",2029,NA
+"Historique",2030,NA
+"Historique",2031,NA
+"Historique",2032,NA
+"Historique",2033,NA
+"Historique",2034,NA
+"Historique",2035,NA
+"Historique",2036,NA
+"Historique",2037,NA
+"Historique",2038,NA
+"Historique",2039,NA
+"Historique",2040,NA
+"Historique",2041,NA
+"Historique",2042,NA
+"Historique",2043,NA
+"Historique",2044,NA
+"Historique",2045,NA
+"Historique",2046,NA
+"Historique",2047,NA
+"Historique",2048,NA
+"Historique",2049,NA
+"Historique",2050,NA
+"Historique",2051,NA
+"Historique",2052,NA
+"Historique",2053,NA
+"Historique",2054,NA
+"Historique",2055,NA
+"Historique",2056,NA
+"Historique",2057,NA
+"Historique",2058,NA
+"Historique",2059,NA
+"Historique",2060,NA
+"Historique",2061,NA
+"Historique",2062,NA
+"Historique",2063,NA
+"Historique",2064,NA
+"Historique",2065,NA
+"Historique",2066,NA
+"Historique",2067,NA
+"Historique",2068,NA
+"Historique",2069,NA
+"Historique",2070,NA
+"Historique",2071,NA
+"Historique",2072,NA
+"Historique",2073,NA
+"Historique",2074,NA
+"Historique",2075,NA
+"Historique",2076,NA
+"Historique",2077,NA
+"Historique",2078,NA
+"Historique",2079,NA
+"Historique",2080,NA
+"Historique",2081,NA
+"Historique",2082,NA
+"Historique",2083,NA
+"Historique",2084,NA
+"Historique",2085,NA
+"Historique",2086,NA
+"Historique",2087,NA
+"Historique",2088,NA
+"Historique",2089,NA
+"Historique",2090,NA
+"Historique",2091,NA
+"Historique",2092,NA
+"Historique",2093,NA
+"Historique",2094,NA
+"Historique",2095,NA
+"Historique",2096,NA
+"Historique",2097,NA
+"Historique",2098,NA
+"Historique",2099,NA
+"Historique",2100,NA
+"Ligne de base",1960,NA
+"Ligne de base",1961,NA
+"Ligne de base",1965,NA
+"Ligne de base",1967,NA
+"Ligne de base",1970,NA
+"Ligne de base",1971,NA
+"Ligne de base",1972,NA
+"Ligne de base",1973,NA
+"Ligne de base",1974,NA
+"Ligne de base",1975,NA
+"Ligne de base",1976,NA
+"Ligne de base",1977,NA
+"Ligne de base",1978,NA
+"Ligne de base",1979,NA
+"Ligne de base",1980,NA
+"Ligne de base",1981,NA
+"Ligne de base",1982,NA
+"Ligne de base",1983,NA
+"Ligne de base",1984,NA
+"Ligne de base",1985,NA
+"Ligne de base",1986,NA
+"Ligne de base",1987,NA
+"Ligne de base",1988,NA
+"Ligne de base",1989,NA
+"Ligne de base",1990,NA
+"Ligne de base",1991,NA
+"Ligne de base",1992,NA
+"Ligne de base",1993,NA
+"Ligne de base",1994,NA
+"Ligne de base",1995,NA
+"Ligne de base",1996,NA
+"Ligne de base",1997,NA
+"Ligne de base",1998,NA
+"Ligne de base",1999,NA
+"Ligne de base",2000,NA
+"Ligne de base",2001,NA
+"Ligne de base",2002,NA
+"Ligne de base",2003,NA
+"Ligne de base",2004,NA
+"Ligne de base",2005,NA
+"Ligne de base",2006,NA
+"Ligne de base",2007,NA
+"Ligne de base",2008,NA
+"Ligne de base",2009,NA
+"Ligne de base",2010,NA
+"Ligne de base",2011,NA
+"Ligne de base",2012,NA
+"Ligne de base",2013,NA
+"Ligne de base",2014,NA
+"Ligne de base",2015,NA
+"Ligne de base",2016,NA
+"Ligne de base",2017,NA
+"Ligne de base",2018,NA
+"Ligne de base",2019,NA
+"Ligne de base",2020,NA
+"Ligne de base",2021,NA
+"Ligne de base",2022,NA
+"Ligne de base",2023,NA
+"Ligne de base",2024,NA
+"Ligne de base",2025,104946
+"Ligne de base",2026,108320
+"Ligne de base",2027,111976
+"Ligne de base",2028,115805
+"Ligne de base",2029,119925
+"Ligne de base",2030,124271
+"Ligne de base",2031,128639
+"Ligne de base",2032,132877
+"Ligne de base",2033,137249
+"Ligne de base",2034,141541
+"Ligne de base",2035,145781
+"Ligne de base",2036,149815
+"Ligne de base",2037,154018
+"Ligne de base",2038,157906
+"Ligne de base",2039,161536
+"Ligne de base",2040,165283
+"Ligne de base",2041,169063
+"Ligne de base",2042,172759
+"Ligne de base",2043,176711
+"Ligne de base",2044,180567
+"Ligne de base",2045,184392
+"Ligne de base",2046,188513
+"Ligne de base",2047,192543
+"Ligne de base",2048,196669
+"Ligne de base",2049,200619
+"Ligne de base",2050,204509
+"Ligne de base",2051,208360
+"Ligne de base",2052,212617
+"Ligne de base",2053,216775
+"Ligne de base",2054,221273
+"Ligne de base",2055,225708
+"Ligne de base",2056,230401
+"Ligne de base",2057,234673
+"Ligne de base",2058,239291
+"Ligne de base",2059,243825
+"Ligne de base",2060,248285
+"Ligne de base",2061,252681
+"Ligne de base",2062,257131
+"Ligne de base",2063,261509
+"Ligne de base",2064,265362
+"Ligne de base",2065,269045
+"Ligne de base",2066,272743
+"Ligne de base",2067,275817
+"Ligne de base",2068,278684
+"Ligne de base",2069,281329
+"Ligne de base",2070,283875
+"Ligne de base",2071,286282
+"Ligne de base",2072,288597
+"Ligne de base",2073,290782
+"Ligne de base",2074,292901
+"Ligne de base",2075,294837
+"Ligne de base",2076,296799
+"Ligne de base",2077,298369
+"Ligne de base",2078,299986
+"Ligne de base",2079,301570
+"Ligne de base",2080,303076
+"Ligne de base",2081,304296
+"Ligne de base",2082,305397
+"Ligne de base",2083,306416
+"Ligne de base",2084,307304
+"Ligne de base",2085,308063
+"Ligne de base",2086,308762
+"Ligne de base",2087,309506
+"Ligne de base",2088,310194
+"Ligne de base",2089,311148
+"Ligne de base",2090,312133
+"Ligne de base",2091,313130
+"Ligne de base",2092,314140
+"Ligne de base",2093,315152
+"Ligne de base",2094,316190
+"Ligne de base",2095,317234
+"Ligne de base",2096,318279
+"Ligne de base",2097,319316
+"Ligne de base",2098,320345
+"Ligne de base",2099,321355
+"Ligne de base",2100,322342
+"Forte migration",1960,NA
+"Forte migration",1961,NA
+"Forte migration",1965,NA
+"Forte migration",1967,NA
+"Forte migration",1970,NA
+"Forte migration",1971,NA
+"Forte migration",1972,NA
+"Forte migration",1973,NA
+"Forte migration",1974,NA
+"Forte migration",1975,NA
+"Forte migration",1976,NA
+"Forte migration",1977,NA
+"Forte migration",1978,NA
+"Forte migration",1979,NA
+"Forte migration",1980,NA
+"Forte migration",1981,NA
+"Forte migration",1982,NA
+"Forte migration",1983,NA
+"Forte migration",1984,NA
+"Forte migration",1985,NA
+"Forte migration",1986,NA
+"Forte migration",1987,NA
+"Forte migration",1988,NA
+"Forte migration",1989,NA
+"Forte migration",1990,NA
+"Forte migration",1991,NA
+"Forte migration",1992,NA
+"Forte migration",1993,NA
+"Forte migration",1994,NA
+"Forte migration",1995,NA
+"Forte migration",1996,NA
+"Forte migration",1997,NA
+"Forte migration",1998,NA
+"Forte migration",1999,NA
+"Forte migration",2000,NA
+"Forte migration",2001,NA
+"Forte migration",2002,NA
+"Forte migration",2003,NA
+"Forte migration",2004,NA
+"Forte migration",2005,NA
+"Forte migration",2006,NA
+"Forte migration",2007,NA
+"Forte migration",2008,NA
+"Forte migration",2009,NA
+"Forte migration",2010,NA
+"Forte migration",2011,NA
+"Forte migration",2012,NA
+"Forte migration",2013,NA
+"Forte migration",2014,NA
+"Forte migration",2015,NA
+"Forte migration",2016,NA
+"Forte migration",2017,NA
+"Forte migration",2018,NA
+"Forte migration",2019,NA
+"Forte migration",2020,NA
+"Forte migration",2021,NA
+"Forte migration",2022,NA
+"Forte migration",2023,NA
+"Forte migration",2024,NA
+"Forte migration",2025,105025
+"Forte migration",2026,108421
+"Forte migration",2027,112105
+"Forte migration",2028,115963
+"Forte migration",2029,120115
+"Forte migration",2030,124486
+"Forte migration",2031,128888
+"Forte migration",2032,133148
+"Forte migration",2033,137558
+"Forte migration",2034,141895
+"Forte migration",2035,146174
+"Forte migration",2036,150244
+"Forte migration",2037,154493
+"Forte migration",2038,158429
+"Forte migration",2039,162113
+"Forte migration",2040,165914
+"Forte migration",2041,169744
+"Forte migration",2042,173498
+"Forte migration",2043,177512
+"Forte migration",2044,181436
+"Forte migration",2045,185326
+"Forte migration",2046,189519
+"Forte migration",2047,193621
+"Forte migration",2048,197827
+"Forte migration",2049,201864
+"Forte migration",2050,205829
+"Forte migration",2051,209779
+"Forte migration",2052,214124
+"Forte migration",2053,218388
+"Forte migration",2054,223004
+"Forte migration",2055,227551
+"Forte migration",2056,232365
+"Forte migration",2057,236762
+"Forte migration",2058,241524
+"Forte migration",2059,246208
+"Forte migration",2060,250824
+"Forte migration",2061,255395
+"Forte migration",2062,260022
+"Forte migration",2063,264586
+"Forte migration",2064,268646
+"Forte migration",2065,272536
+"Forte migration",2066,276440
+"Forte migration",2067,279717
+"Forte migration",2068,282801
+"Forte migration",2069,285638
+"Forte migration",2070,288374
+"Forte migration",2071,290969
+"Forte migration",2072,293474
+"Forte migration",2073,295832
+"Forte migration",2074,298120
+"Forte migration",2075,300207
+"Forte migration",2076,302321
+"Forte migration",2077,304035
+"Forte migration",2078,305796
+"Forte migration",2079,307505
+"Forte migration",2080,309129
+"Forte migration",2081,310467
+"Forte migration",2082,311670
+"Forte migration",2083,312784
+"Forte migration",2084,313770
+"Forte migration",2085,314617
+"Forte migration",2086,315390
+"Forte migration",2087,316211
+"Forte migration",2088,316969
+"Forte migration",2089,317991
+"Forte migration",2090,319033
+"Forte migration",2091,320086
+"Forte migration",2092,321155
+"Forte migration",2093,322236
+"Forte migration",2094,323324
+"Forte migration",2095,324419
+"Forte migration",2096,325521
+"Forte migration",2097,326610
+"Forte migration",2098,327694
+"Forte migration",2099,328754
+"Forte migration",2100,329795
+"Faible fertilité",1960,NA
+"Faible fertilité",1961,NA
+"Faible fertilité",1965,NA
+"Faible fertilité",1967,NA
+"Faible fertilité",1970,NA
+"Faible fertilité",1971,NA
+"Faible fertilité",1972,NA
+"Faible fertilité",1973,NA
+"Faible fertilité",1974,NA
+"Faible fertilité",1975,NA
+"Faible fertilité",1976,NA
+"Faible fertilité",1977,NA
+"Faible fertilité",1978,NA
+"Faible fertilité",1979,NA
+"Faible fertilité",1980,NA
+"Faible fertilité",1981,NA
+"Faible fertilité",1982,NA
+"Faible fertilité",1983,NA
+"Faible fertilité",1984,NA
+"Faible fertilité",1985,NA
+"Faible fertilité",1986,NA
+"Faible fertilité",1987,NA
+"Faible fertilité",1988,NA
+"Faible fertilité",1989,NA
+"Faible fertilité",1990,NA
+"Faible fertilité",1991,NA
+"Faible fertilité",1992,NA
+"Faible fertilité",1993,NA
+"Faible fertilité",1994,NA
+"Faible fertilité",1995,NA
+"Faible fertilité",1996,NA
+"Faible fertilité",1997,NA
+"Faible fertilité",1998,NA
+"Faible fertilité",1999,NA
+"Faible fertilité",2000,NA
+"Faible fertilité",2001,NA
+"Faible fertilité",2002,NA
+"Faible fertilité",2003,NA
+"Faible fertilité",2004,NA
+"Faible fertilité",2005,NA
+"Faible fertilité",2006,NA
+"Faible fertilité",2007,NA
+"Faible fertilité",2008,NA
+"Faible fertilité",2009,NA
+"Faible fertilité",2010,NA
+"Faible fertilité",2011,NA
+"Faible fertilité",2012,NA
+"Faible fertilité",2013,NA
+"Faible fertilité",2014,NA
+"Faible fertilité",2015,NA
+"Faible fertilité",2016,NA
+"Faible fertilité",2017,NA
+"Faible fertilité",2018,NA
+"Faible fertilité",2019,NA
+"Faible fertilité",2020,NA
+"Faible fertilité",2021,NA
+"Faible fertilité",2022,NA
+"Faible fertilité",2023,NA
+"Faible fertilité",2024,NA
+"Faible fertilité",2025,104946
+"Faible fertilité",2026,108320
+"Faible fertilité",2027,111976
+"Faible fertilité",2028,115805
+"Faible fertilité",2029,119928
+"Faible fertilité",2030,124275
+"Faible fertilité",2031,128646
+"Faible fertilité",2032,132886
+"Faible fertilité",2033,137268
+"Faible fertilité",2034,141572
+"Faible fertilité",2035,145821
+"Faible fertilité",2036,149859
+"Faible fertilité",2037,154075
+"Faible fertilité",2038,157984
+"Faible fertilité",2039,161632
+"Faible fertilité",2040,165399
+"Faible fertilité",2041,169194
+"Faible fertilité",2042,172911
+"Faible fertilité",2043,176895
+"Faible fertilité",2044,180777
+"Faible fertilité",2045,184632
+"Faible fertilité",2046,188794
+"Faible fertilité",2047,192858
+"Faible fertilité",2048,197030
+"Faible fertilité",2049,201029
+"Faible fertilité",2050,204960
+"Faible fertilité",2051,208863
+"Faible fertilité",2052,213173
+"Faible fertilité",2053,217394
+"Faible fertilité",2054,221973
+"Faible fertilité",2055,226475
+"Faible fertilité",2056,231248
+"Faible fertilité",2057,235605
+"Faible fertilité",2058,240313
+"Faible fertilité",2059,244948
+"Faible fertilité",2060,249514
+"Faible fertilité",2061,254016
+"Faible fertilité",2062,258587
+"Faible fertilité",2063,263088
+"Faible fertilité",2064,267076
+"Faible fertilité",2065,270902
+"Faible fertilité",2066,274752
+"Faible fertilité",2067,277985
+"Faible fertilité",2068,281030
+"Faible fertilité",2069,283856
+"Faible fertilité",2070,286594
+"Faible fertilité",2071,289200
+"Faible fertilité",2072,291728
+"Faible fertilité",2073,294142
+"Faible fertilité",2074,296501
+"Faible fertilité",2075,298680
+"Faible fertilité",2076,300891
+"Faible fertilité",2077,302733
+"Faible fertilité",2078,304625
+"Faible fertilité",2079,306490
+"Faible fertilité",2080,308291
+"Faible fertilité",2081,309820
+"Faible fertilité",2082,311232
+"Faible fertilité",2083,312571
+"Faible fertilité",2084,313799
+"Faible fertilité",2085,314898
+"Faible fertilité",2086,315947
+"Faible fertilité",2087,317053
+"Faible fertilité",2088,318118
+"Faible fertilité",2089,318110
+"Faible fertilité",2090,318119
+"Faible fertilité",2091,318127
+"Faible fertilité",2092,318141
+"Faible fertilité",2093,318164
+"Faible fertilité",2094,318202
+"Faible fertilité",2095,318252
+"Faible fertilité",2096,318307
+"Faible fertilité",2097,318365
+"Faible fertilité",2098,318418
+"Faible fertilité",2099,318476
+"Faible fertilité",2100,318516
+"Faible migration",1960,NA
+"Faible migration",1961,NA
+"Faible migration",1965,NA
+"Faible migration",1967,NA
+"Faible migration",1970,NA
+"Faible migration",1971,NA
+"Faible migration",1972,NA
+"Faible migration",1973,NA
+"Faible migration",1974,NA
+"Faible migration",1975,NA
+"Faible migration",1976,NA
+"Faible migration",1977,NA
+"Faible migration",1978,NA
+"Faible migration",1979,NA
+"Faible migration",1980,NA
+"Faible migration",1981,NA
+"Faible migration",1982,NA
+"Faible migration",1983,NA
+"Faible migration",1984,NA
+"Faible migration",1985,NA
+"Faible migration",1986,NA
+"Faible migration",1987,NA
+"Faible migration",1988,NA
+"Faible migration",1989,NA
+"Faible migration",1990,NA
+"Faible migration",1991,NA
+"Faible migration",1992,NA
+"Faible migration",1993,NA
+"Faible migration",1994,NA
+"Faible migration",1995,NA
+"Faible migration",1996,NA
+"Faible migration",1997,NA
+"Faible migration",1998,NA
+"Faible migration",1999,NA
+"Faible migration",2000,NA
+"Faible migration",2001,NA
+"Faible migration",2002,NA
+"Faible migration",2003,NA
+"Faible migration",2004,NA
+"Faible migration",2005,NA
+"Faible migration",2006,NA
+"Faible migration",2007,NA
+"Faible migration",2008,NA
+"Faible migration",2009,NA
+"Faible migration",2010,NA
+"Faible migration",2011,NA
+"Faible migration",2012,NA
+"Faible migration",2013,NA
+"Faible migration",2014,NA
+"Faible migration",2015,NA
+"Faible migration",2016,NA
+"Faible migration",2017,NA
+"Faible migration",2018,NA
+"Faible migration",2019,NA
+"Faible migration",2020,NA
+"Faible migration",2021,NA
+"Faible migration",2022,NA
+"Faible migration",2023,NA
+"Faible migration",2024,NA
+"Faible migration",2025,104869
+"Faible migration",2026,108215
+"Faible migration",2027,111838
+"Faible migration",2028,115648
+"Faible migration",2029,119739
+"Faible migration",2030,124054
+"Faible migration",2031,128393
+"Faible migration",2032,132594
+"Faible migration",2033,136931
+"Faible migration",2034,141196
+"Faible migration",2035,145392
+"Faible migration",2036,149373
+"Faible migration",2037,153539
+"Faible migration",2038,157387
+"Faible migration",2039,160965
+"Faible migration",2040,164660
+"Faible migration",2041,168382
+"Faible migration",2042,172015
+"Faible migration",2043,175904
+"Faible migration",2044,179699
+"Faible migration",2045,183449
+"Faible migration",2046,187510
+"Faible migration",2047,191456
+"Faible migration",2048,195513
+"Faible migration",2049,199383
+"Faible migration",2050,203183
+"Faible migration",2051,206950
+"Faible migration",2052,211101
+"Faible migration",2053,215162
+"Faible migration",2054,219556
+"Faible migration",2055,223870
+"Faible migration",2056,228443
+"Faible migration",2057,232581
+"Faible migration",2058,237058
+"Faible migration",2059,241446
+"Faible migration",2060,245751
+"Faible migration",2061,249973
+"Faible migration",2062,254250
+"Faible migration",2063,258433
+"Faible migration",2064,262092
+"Faible migration",2065,265565
+"Faible migration",2066,269051
+"Faible migration",2067,271913
+"Faible migration",2068,274589
+"Faible migration",2069,277034
+"Faible migration",2070,279377
+"Faible migration",2071,281593
+"Faible migration",2072,283734
+"Faible migration",2073,285739
+"Faible migration",2074,287698
+"Faible migration",2075,289468
+"Faible migration",2076,291274
+"Faible migration",2077,292702
+"Faible migration",2078,294196
+"Faible migration",2079,295647
+"Faible migration",2080,297030
+"Faible migration",2081,298140
+"Faible migration",2082,299129
+"Faible migration",2083,300053
+"Faible migration",2084,300852
+"Faible migration",2085,301525
+"Faible migration",2086,302146
+"Faible migration",2087,302818
+"Faible migration",2088,303445
+"Faible migration",2089,304334
+"Faible migration",2090,305257
+"Faible migration",2091,306195
+"Faible migration",2092,307142
+"Faible migration",2093,308103
+"Faible migration",2094,309086
+"Faible migration",2095,310076
+"Faible migration",2096,311070
+"Faible migration",2097,312048
+"Faible migration",2098,313026
+"Faible migration",2099,313986
+"Faible migration",2100,314921
+"Forte fertilité",1960,NA
+"Forte fertilité",1961,NA
+"Forte fertilité",1965,NA
+"Forte fertilité",1967,NA
+"Forte fertilité",1970,NA
+"Forte fertilité",1971,NA
+"Forte fertilité",1972,NA
+"Forte fertilité",1973,NA
+"Forte fertilité",1974,NA
+"Forte fertilité",1975,NA
+"Forte fertilité",1976,NA
+"Forte fertilité",1977,NA
+"Forte fertilité",1978,NA
+"Forte fertilité",1979,NA
+"Forte fertilité",1980,NA
+"Forte fertilité",1981,NA
+"Forte fertilité",1982,NA
+"Forte fertilité",1983,NA
+"Forte fertilité",1984,NA
+"Forte fertilité",1985,NA
+"Forte fertilité",1986,NA
+"Forte fertilité",1987,NA
+"Forte fertilité",1988,NA
+"Forte fertilité",1989,NA
+"Forte fertilité",1990,NA
+"Forte fertilité",1991,NA
+"Forte fertilité",1992,NA
+"Forte fertilité",1993,NA
+"Forte fertilité",1994,NA
+"Forte fertilité",1995,NA
+"Forte fertilité",1996,NA
+"Forte fertilité",1997,NA
+"Forte fertilité",1998,NA
+"Forte fertilité",1999,NA
+"Forte fertilité",2000,NA
+"Forte fertilité",2001,NA
+"Forte fertilité",2002,NA
+"Forte fertilité",2003,NA
+"Forte fertilité",2004,NA
+"Forte fertilité",2005,NA
+"Forte fertilité",2006,NA
+"Forte fertilité",2007,NA
+"Forte fertilité",2008,NA
+"Forte fertilité",2009,NA
+"Forte fertilité",2010,NA
+"Forte fertilité",2011,NA
+"Forte fertilité",2012,NA
+"Forte fertilité",2013,NA
+"Forte fertilité",2014,NA
+"Forte fertilité",2015,NA
+"Forte fertilité",2016,NA
+"Forte fertilité",2017,NA
+"Forte fertilité",2018,NA
+"Forte fertilité",2019,NA
+"Forte fertilité",2020,NA
+"Forte fertilité",2021,NA
+"Forte fertilité",2022,NA
+"Forte fertilité",2023,NA
+"Forte fertilité",2024,NA
+"Forte fertilité",2025,104999
+"Forte fertilité",2026,108416
+"Forte fertilité",2027,112132
+"Forte fertilité",2028,116040
+"Forte fertilité",2029,120255
+"Forte fertilité",2030,124695
+"Forte fertilité",2031,129187
+"Forte fertilité",2032,133553
+"Forte fertilité",2033,138072
+"Forte fertilité",2034,142529
+"Forte fertilité",2035,146939
+"Forte fertilité",2036,151160
+"Forte fertilité",2037,155559
+"Forte fertilité",2038,159667
+"Forte fertilité",2039,163527
+"Forte fertilité",2040,167520
+"Forte fertilité",2041,171552
+"Forte fertilité",2042,175526
+"Forte fertilité",2043,179772
+"Forte fertilité",2044,183937
+"Forte fertilité",2045,188078
+"Forte fertilité",2046,192539
+"Forte fertilité",2047,196912
+"Forte fertilité",2048,201412
+"Forte fertilité",2049,205745
+"Forte fertilité",2050,210018
+"Forte fertilité",2051,214279
+"Forte fertilité",2052,218950
+"Forte fertilité",2053,223541
+"Forte fertilité",2054,228486
+"Forte fertilité",2055,233366
+"Forte fertilité",2056,238529
+"Forte fertilité",2057,243263
+"Forte fertilité",2058,248356
+"Forte fertilité",2059,253378
+"Forte fertilité",2060,258324
+"Forte fertilité",2061,263214
+"Forte fertilité",2062,268164
+"Forte fertilité",2063,273041
+"Forte fertilité",2064,277407
+"Forte fertilité",2065,281609
+"Forte fertilité",2066,285823
+"Forte fertilité",2067,289414
+"Forte fertilité",2068,292825
+"Forte fertilité",2069,296008
+"Forte fertilité",2070,299109
+"Forte fertilité",2071,302071
+"Forte fertilité",2072,304917
+"Forte fertilité",2073,307596
+"Forte fertilité",2074,310173
+"Forte fertilité",2075,312531
+"Forte fertilité",2076,314888
+"Forte fertilité",2077,316832
+"Forte fertilité",2078,318793
+"Forte fertilité",2079,320689
+"Forte fertilité",2080,322470
+"Forte fertilité",2081,323950
+"Forte fertilité",2082,325282
+"Forte fertilité",2083,326502
+"Forte fertilité",2084,327574
+"Forte fertilité",2085,328479
+"Forte fertilité",2086,329288
+"Forte fertilité",2087,330128
+"Forte fertilité",2088,330879
+"Forte fertilité",2089,331859
+"Forte fertilité",2090,332852
+"Forte fertilité",2091,333825
+"Forte fertilité",2092,334794
+"Forte fertilité",2093,335747
+"Forte fertilité",2094,336693
+"Forte fertilité",2095,337633
+"Forte fertilité",2096,338561
+"Forte fertilité",2097,339461
+"Forte fertilité",2098,340345
+"Forte fertilité",2099,341215
+"Forte fertilité",2100,342055
