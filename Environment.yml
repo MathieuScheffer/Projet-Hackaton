@@ -1,0 +1,21 @@
+Install these packages:
+
+Packages:
+library(shiny)
+library(bs4Dash)
+library(DT)
+library(highcharter)
+library(htmltools)
+library(fresh)
+library(RCurl)
+library(geodata)
+library(raster)
+library(sf)
+library(dplyr)
+library(tidyverse)
+library(leaflet)
+library(RColorBrewer)
+library(rsdmx)
+library(eurostat)
+library(forecast)
+library(tseries)
