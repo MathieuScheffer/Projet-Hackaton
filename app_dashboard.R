@@ -10,6 +10,9 @@ library(raster)
 library(sf)
 library(dplyr)
 library(tidyverse)
+library(leaflet)
+library(RColorBrewer)
+library(shinyjs)
 
 theme <- create_theme(
   bs4dash_color(
@@ -27,8 +30,12 @@ couleurs <- list("Resident" = "#1f77b4", "Etranger" = "#ff7f0e")
 
 # Upload des resultats de github
 df_depense_publique_cate <- read.csv(text = getURL("https://raw.githubusercontent.com/MathieuScheffer/Projet-Hackaton/Resources/df_depense_publique_cate.csv")) %>%
-  dplyr::rename("Autres dépenses" = "Autres.dépenses",
-         "Autres dépenses sociales" = "Autres.dépenses.sociales")
+  dplyr::rename(`Autres dépenses` = "Autres.dépenses",
+                `Autres dépenses sociales` = "Autres.dépenses.sociales")
+
+df_depense_publique_cate_milleur <- read.csv(text = getURL("https://raw.githubusercontent.com/MathieuScheffer/Projet-Hackaton/Resources/df_depense_publique_cate_milleur.csv")) %>%
+  dplyr::rename(`Autres dépenses` = "Autres.dépenses",
+                `Autres dépenses sociales` = "Autres.dépenses.sociales")
 
 df_ratio1_tf <- read.csv(text = getURL("https://raw.githubusercontent.com/MathieuScheffer/Projet-Hackaton/Resources/df_ratio1_tf.csv"))
 
@@ -99,7 +106,6 @@ map_pct_65_plus_canton <- leaflet(lu_sf_ratio1) %>%
     opacity = 0.9
   )
 
-
 # Creation du 2eme leaflet par canton - % immigrés par canton
 lu_sf_ratio2 <- lu_sf %>%
   left_join(df_ratio2_tf, by = c("NAME_2" = "geo_name_fr"))
@@ -135,7 +141,6 @@ map_immigre_canton <- leaflet(lu_sf_ratio2) %>%
     labFormat = labelFormat(suffix = "%"),
     opacity = 0.9
   )
-
 
 ui <- bs4Dash::dashboardPage(
   title = "Hackathon STATEC",
@@ -179,9 +184,8 @@ ui <- bs4Dash::dashboardPage(
       tabItem(
         tabName = "Tab_analysis",
         
-        # FluidRow : cartes et graphique côte à côte
+        # 2 leaflets
         fluidRow(
-          # Colonne gauche : TabBox avec les cartes
           column(
             width = 6,
             tabBox(
@@ -193,20 +197,40 @@ ui <- bs4Dash::dashboardPage(
               
               tabPanel(
                 tabName = "map65",
-                title = "65 ans et plus",
+                title = "% 65 ans et plus",
                 active = TRUE,
-                leafletOutput("map_65pct")
+                leafletOutput("map_65pct"),
+                br(),
+                div(
+                  style = "text-align: right; padding: 10px;",
+                  actionButton(
+                    inputId = "info_button_map65",
+                    label = "Informations",
+                    icon = icon("info-circle"),
+                    class = "btn btn-info"
+                  )
+                )
               ),
               
               tabPanel(
                 tabName = "mapImm",
                 title = "Immigration",
-                leafletOutput("map_immigre")
+                leafletOutput("map_immigre"),
+                br(),
+                div(
+                  style = "text-align: right; padding: 10px;",
+                  actionButton(
+                    inputId = "info_button_map_immi",
+                    label = "Informations",
+                    icon = icon("info-circle"),
+                    class = "btn btn-info"
+                  )
+                )
               )
             )
           ),
           
-          # Colonne droite : graphique dépenses publiques
+          # Graphique dépenses publiques
           column(
             width = 6,
             tabBox(
@@ -218,9 +242,36 @@ ui <- bs4Dash::dashboardPage(
               
               tabPanel(
                 tabName = "graph_dep_pub",
-                title = "Dépenses publiques luxembourgeoise par catégorie",
+                title = "Dépenses publiques (en %)",
                 active = TRUE,
-                highchartOutput("graph_depense_publique_cate")
+                highchartOutput("graph_depense_publique_cate"),
+                br(),
+                div(
+                  style = "text-align: right; padding: 10px;",
+                  actionButton(
+                    inputId = "info_button_dep_publique",
+                    label = "Informations",
+                    icon = icon("info-circle"),
+                    class = "btn btn-info"
+                  )
+                )
+              ),
+              
+              tabPanel(
+                tabName = "graph_dep_pub_milleur",
+                title = "Dépenses publiques (en millions euro)",
+                active = TRUE,
+                highchartOutput("graph_depense_publique_cate_millions_eur"),
+                br(),
+                div(
+                  style = "text-align: right; padding: 10px;",
+                  actionButton(
+                    inputId = "info_button_dep_publique_millions_eur",
+                    label = "Informations",
+                    icon = icon("info-circle"),
+                    class = "btn btn-info"
+                  )
+                )
               )
             )
           )
@@ -236,17 +287,39 @@ ui <- bs4Dash::dashboardPage(
               solidHeader = TRUE,
               collapsible = TRUE,
               
+              # Onglet 1 : population totale
               tabPanel(
                 tabName = "pop2010",
                 title = "Pop. jusque 2100",
                 active = TRUE,
-                highchartOutput("df_pop_jsq_2100")
+                highchartOutput("df_pop_jsq_2100"),
+                br(),
+                div(
+                  style = "text-align: right; padding: 10px;",
+                  actionButton(
+                    inputId = "info_button_pop",
+                    label = "Informations",
+                    icon = icon("info-circle"),
+                    class = "btn btn-info"
+                  )
+                )
               ),
               
+              # Onglet 2 : population 65+ ans
               tabPanel(
                 tabName = "pop2010_65ans_plus",
                 title = "Pop. 65 ans et plus jusque 2100",
-                highchartOutput("df_pop_jsq_2100_65plus")
+                highchartOutput("df_pop_jsq_2100_65plus"),
+                br(),
+                div(
+                  style = "text-align: right; padding: 10px;",
+                  actionButton(
+                    inputId = "info_button_pop65",
+                    label = "Informations",
+                    icon = icon("info-circle"),
+                    class = "btn btn-info"
+                  )
+                )
               )
             )
           ),
@@ -264,7 +337,17 @@ ui <- bs4Dash::dashboardPage(
                 tabName = "graph_res_etr",
                 title = "Part des résidents et étrangers dans les pensions",
                 active = TRUE,
-                highchartOutput("graph_result_lm")
+                highchartOutput("graph_result_lm"),
+                br(),
+                div(
+                  style = "text-align: right; padding: 10px;",
+                  actionButton(
+                    inputId = "info_button_res_etr",
+                    label = "Informations",
+                    icon = icon("info-circle"),
+                    class = "btn btn-info"
+                  )
+                )
               )
             )
           )
@@ -274,16 +357,48 @@ ui <- bs4Dash::dashboardPage(
   )
 )
 
+
 server <- function(input, output, session) {
 
   output$map_65pct<- renderLeaflet({
     map_pct_65_plus_canton
   })
   
+  # Bouton information map par canton pct 65 ans et plus
+  observeEvent(input$info_button_map65, {
+    showModal(modalDialog(
+      title = "% 65 ans et plus par canton",
+      size = "l",
+      tags$div(
+        style = "max-width: 700px; white-space: normal; word-wrap: break-word;",
+        p("Lien: https://lustat.statec.lu/vis?lc=en&pg=0&snb=1&df[ds]=ds-release&df[id]=DSD_CENSUS_GROUP1_3%40DF_B1607&df[ag]=LU1&df[vs]=1.0&dq=..A10.._T.................&pd=2021%2C2021&to[TIME_PERIOD]=false"),
+        p("Date de publication: 13 décembre 2024"),
+        p("Source: STATEC")
+      ),
+      easyClose = TRUE,
+      footer = modalButton("Fermer")
+    ))
+  })
+  
   output$map_immigre <- renderLeaflet({
       map_immigre_canton
   })
   
+  # Bouton information map par canton - immigration
+  observeEvent(input$info_button_map_immi, {
+    showModal(modalDialog(
+      title = "% de personnes d'origine étrangère",
+      size = "l",
+      tags$div(
+        style = "max-width: 700px; white-space: normal; word-wrap: break-word;",
+        p("Lien: https://lustat.statec.lu/vis?lc=en&pg=0&snb=1&df%5bds%5d=ds-release&df%5bid%5d=DSD_CENSUS_GROUP7_10%40DF_B1626&df%5bag%5d=LU1&df%5bvs%5d=1.0&dq=..A10._T..................&pd=2021%2C2021&to%5bTIME_PERIOD%5d=false"),
+        p("Date de publication: 18 décembre 2024"),
+        p("Source: STATEC")
+      ),
+      easyClose = TRUE,
+      footer = modalButton("Fermer")
+    ))
+  })
   
   output$graph_depense_publique_cate <- renderHighchart({
     highchart() %>%
@@ -298,6 +413,53 @@ server <- function(input, output, session) {
       hc_add_series(name = "Autres dépenses sociales", data = df_depense_publique_cate$`Autres dépenses sociales`, color = "#377eb8") %>%
       hc_add_series(name = "Autres dépenses", data = df_depense_publique_cate$`Autres dépenses`, color = "#27F5EE")
   })
+  
+  # Bouton depenses publiques pct
+  observeEvent(input$info_button_dep_publique, {
+    showModal(modalDialog(
+      title = "Dépenses publiques luxembourgeoise par catégorie (% du total)",
+      size = "l",
+      tags$div(
+        style = "max-width: 700px; white-space: normal; word-wrap: break-word;",
+        p("Lien: https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table?lang=fr"),
+        p("Date de publication: 21 octobre 2025"),
+        p("Source: Eurostat"),
+      ),
+      easyClose = TRUE,
+      footer = modalButton("Fermer")
+    ))
+  })
+  
+  output$graph_depense_publique_cate_millions_eur <- renderHighchart({
+    highchart() %>%
+      hc_chart(type = "column") %>%   
+      hc_xAxis(categories = df_depense_publique_cate_milleur$TIME_PERIOD) %>%
+      hc_yAxis(title = list(text = "Dépenses en millions d'euro")) %>%
+      hc_plotOptions(
+        column = list(stacking = "normal") 
+      ) %>%
+      hc_add_series(name = "Santé", data = df_depense_publique_cate_milleur$Santé, color = "#4daf4a") %>%
+      hc_add_series(name = "Vieillesse", data = df_depense_publique_cate_milleur$Vieillesse, color = "#e41a1c") %>%
+      hc_add_series(name = "Autres dépenses sociales", data = df_depense_publique_cate_milleur$`Autres dépenses sociales`, color = "#377eb8") %>%
+      hc_add_series(name = "Autres dépenses", data = df_depense_publique_cate_milleur$`Autres dépenses`, color = "#27F5EE")
+  })
+  
+  # Bouton depenses publiques millions euro
+  observeEvent(input$info_button_dep_publique_millions_eur, {
+    showModal(modalDialog(
+      title = "Dépenses publiques luxembourgeoise par catégorie (millions euro)",
+      size = "l",
+      tags$div(
+        style = "max-width: 700px; white-space: normal; word-wrap: break-word;",
+        p("Lien: https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table?lang=fr"),
+        p("Date de publication: 21 octobre 2025"),
+        p("Source: Eurostat"),
+      ),
+      easyClose = TRUE,
+      footer = modalButton("Fermer")
+    ))
+  })
+  
   
   output$df_pop_jsq_2100 <- renderHighchart({
     highchart() %>%
@@ -321,6 +483,11 @@ server <- function(input, output, session) {
             data = list_parse2(.x %>% dplyr::select(x=year, y=population)),
             dashStyle=ifelse(unique(.x$projection) == "Historique", "Solid", "Dash")
           ))
+      ) %>%
+      hc_plotOptions(
+        series = list(
+          marker = list(enabled = FALSE)
+        )
       )
   })
   
@@ -349,6 +516,39 @@ server <- function(input, output, session) {
       )
   })
   
+  # Bouton Evolution de la population 
+  observeEvent(input$info_button_pop, {
+    showModal(modalDialog(
+      title = "Evolution de la population avec projection jusque 2100",
+      size = "l",
+      tags$div(
+        style = "max-width: 700px; white-space: normal; word-wrap: break-word;",
+        p("Lien: https://ec.europa.eu/eurostat/databrowser/view/demo_pjangroup/default/table?lang=en"),
+        p("Date de publication: 28 juin 2023"),
+        p("Source: Eurostat"),
+      ),
+      easyClose = TRUE,
+      footer = modalButton("Fermer")
+    ))
+  })
+  
+  # Bouton Evolution de la population 65 ans et plus
+  observeEvent(input$info_button_pop65, {
+    showModal(modalDialog(
+      title = "Evolution de la population de 65 ans et plus avec projection jusque 2100",
+      size = "l",
+      tags$div(
+        style = "max-width: 700px; white-space: normal; word-wrap: break-word;",
+        p("Lien: https://ec.europa.eu/eurostat/databrowser/view/proj_23np/default/table?lang=en"),
+        p("Date de publication: 28 juin 2023"),
+        p("Source: Eurostat"),
+      ),
+      easyClose = TRUE,
+      footer = modalButton("Fermer")
+    ))
+  })
+  
+  # Graphique Part des résidents et étrangers dans les pensions
   output$graph_result_lm <- renderHighchart({
     highchart() %>%
       hc_chart(type = "line") %>%
@@ -368,7 +568,7 @@ server <- function(input, output, session) {
           )
         )
       ) %>%
-      hc_yAxis(title = list(text = "Valeur"), min = 0, max = 100) %>%
+      hc_yAxis(title = list(text = "Repartition"), min = 0, max = 100) %>%
       hc_tooltip(shared = TRUE, valueDecimals = 0) %>%
       hc_add_series_list(
         result_lm %>%
@@ -383,6 +583,18 @@ server <- function(input, output, session) {
             marker = list(enabled = FALSE)  
           ))
       )
+  })
+  
+  # Bouton information graphique Part des résidents et étrangers dans les pensions
+  observeEvent(input$info_button_res_etr, {
+    showModal(modalDialog(
+      title = "Evolution du nombre des pensions résidents et des pensions transférées par catégorie de pension",
+      p("Lien : https://data.public.lu/fr/datasets/series-statistiques-sur-les-pensions/#/resources/dd3f0107-80cc-4bf5-b297-0a8a739f18ef"),
+      p("Date de publication: 20 juin 2025"),
+      p("Source: Data.public.lu"),
+      easyClose = TRUE,
+      footer = modalButton("Fermer")
+    ))
   })
   
 }
